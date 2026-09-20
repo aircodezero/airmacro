@@ -381,6 +381,12 @@ function NotifyDialog({ onClose }: { onClose: () => void }) {
           value for the others. Times are shown in each device’s time zone.
         </p>
 
+        <p className="panel-note">
+          To deliver alerts, this AirMacro server stores this device’s Push endpoint, or your ntfy topic and optional
+          access token, until you turn Push off or remove the ntfy settings. Those details are used only to deliver the
+          alerts you enable here.
+        </p>
+
         {config.isPending ? (
           <p className="panel-note">Loading alert settings…</p>
         ) : config.isError || !c ? (
