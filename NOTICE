@@ -1,0 +1,13 @@
+AirCrypto / AirMacro — external services
+=========================================
+
+This repository distributes original source code under the MIT license in
+LICENSE. It does not distribute captured market, news, economic, or template
+reference material.
+
+At runtime the applications can request data from the external services named
+in the source and user interface. Their responses, product names, and
+trademarks remain subject to their respective owners and terms. Developers may
+create local fallback snapshots with the tools under `server/tools/`; generated
+`server/seed/*.json` files stay git-ignored and are never part of the public
+source distribution.

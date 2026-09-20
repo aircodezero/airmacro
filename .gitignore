@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+.aircrypto-offline
+.data/
+dist-airmacro/
+design/
+server/seed/*.json

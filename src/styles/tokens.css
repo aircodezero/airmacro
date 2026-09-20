@@ -1,0 +1,76 @@
+/*
+ * AirCrypto / AirMacro — application-owned design tokens.
+ * This file is original project source distributed under the repository's MIT
+ * license. It uses system fonts and contains no external design assets.
+ */
+:root {
+  color-scheme: dark;
+
+  /* Typographie — polices système uniquement */
+  --ac-font-sans: Inter, "Segoe UI", system-ui, -apple-system, sans-serif;
+  --ac-font-mono: "SFMono-Regular", "Cascadia Mono", Consolas, ui-monospace, monospace;
+
+  --ac-text-xs: 11px;
+  --ac-text-sm: 12px;
+  --ac-text-md: 13px;
+  --ac-text-base: 14px;
+  --ac-text-lg: 17px;
+  --ac-text-xl: 24px;
+  --ac-text-2xl: 32px;
+
+  --ac-weight-normal: 400;
+  --ac-weight-strong: 600;
+  --ac-weight-display: 750;
+
+  /* Couleurs — fond quasi noir, panneaux graphite, accent jaune */
+  --ac-bg: #0a0d11;
+  --ac-surface: #12161d;
+  --ac-surface-2: #1a2029;
+  --ac-ink: #edf1f7;
+  --ac-muted: #94a0b5;
+  --ac-ink-inverse: #0a0d11;
+
+  --ac-accent: #f2c94c;
+  --ac-accent-ink: #1a1608;
+  --ac-accent-soft: rgba(242, 201, 76, 0.14);
+
+  /* Teal / rose : réservés aux données signées et aux états réels */
+  --ac-up: #3ecfa3;
+  --ac-up-soft: rgba(62, 207, 163, 0.13);
+  --ac-down: #ff7e93;
+  --ac-down-soft: rgba(255, 126, 147, 0.13);
+  --ac-warn: #f2c94c;
+
+  --ac-border: #2a313c;
+  --ac-border-strong: #71809a;
+
+  --ac-radius-sm: 4px;
+  --ac-radius-md: 6px;
+  --ac-radius-lg: 10px;
+  --ac-radius-pill: 999px;
+
+  --ac-space-1: 4px;
+  --ac-space-2: 8px;
+  --ac-space-3: 12px;
+  --ac-space-4: 18px;
+  --ac-space-5: 28px;
+  --ac-space-6: 44px;
+
+  --ac-motion-fast: 120ms;
+  --ac-motion-base: 200ms;
+  --ac-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  --ac-shadow-md: 0 18px 48px rgba(0, 0, 0, 0.55);
+
+  /* Séries de graphiques (catégorielles, non signées) — palette validée
+   * (contraste, séparation CVD, bande de luminosité) contre --ac-surface.
+   * L'affectation est fixe par entité (src/lib/colors.ts), jamais cyclée. */
+  --ac-s1: #3987e5; /* bleu */
+  --ac-s2: #008300; /* vert */
+  --ac-s3: #d55181; /* magenta */
+  --ac-s4: #c98500; /* or */
+  --ac-s5: #199e70; /* aqua */
+  --ac-s6: #d95926; /* orange */
+  --ac-s7: #9085e9; /* violet */
+  --ac-s8: #e66767; /* rouge */
+}

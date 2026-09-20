@@ -1,0 +1,36 @@
+/* AirMacro — coque de l'app dédiée (mêmes jetons que AirCrypto) */
+
+.macro-topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  min-height: 58px;
+  padding: 8px 20px;
+  background: var(--ac-surface);
+  border-bottom: 1px solid var(--ac-border);
+}
+
+.macro-app-title {
+  font-size: 19px;
+  font-weight: var(--ac-weight-display);
+  letter-spacing: -0.04em;
+  line-height: 1.25;
+}
+
+.macro-notfound {
+  display: grid;
+  gap: 8px;
+  padding-block: var(--ac-space-5);
+}
+
+.macro-notfound h2 {
+  font-size: var(--ac-text-lg);
+}
+
+@media (max-width: 900px) {
+  .macro-topbar {
+    padding: 8px 14px;
+  }
+}
